@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>CSS maintenables avec Sass &amp; Compass</title>
+  <meta name="Description" content="Le livre indispensable pour toute équipe de conception web : bonnes pratiques, astuces, méthodes d’intégration et préprocesseurs CSS" />
+  <meta name="author" content="Kaelig Deloumeau-Prigent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/screen.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS maintenables</h1>
+    <div class="subtitle">
+      <p>Avec Sass &amp; Compass</p>
+      <p>Outils et bonnes pratiques pour l’intégrateur web</p>
+    </div>
+  </header>
+  
+  <figure class="cover">
+    <img src="images/css-maintenables.png" alt="CSS maintenables" />
+  </figure>
+  
+  <section class="introduction">
+    <p><strong>Tous les passionnés et professionnels du design web le savent : les feuilles de styles peuvent devenir un casse-tête pour tous ceux qui conçoivent le design de sites web</strong>.</p>
+    <p>De l’amateur qui crée un site WordPress à l’intégrateur professionnel, qu’il travaille en agence ou sur un produit unique. Cet ouvrage aborde toutes les bonnes pratiques en matière de CSS pour obtenir des CSS maintenables.</p>
+    <p>Il préconise l’utilisation d’outils fiables, permettant d’éviter bruit et redondance dans le développement des feuilles de style CSS – tout en conservant leur nature en cascade.</p>
+  </section>
+  
+  <section class="buy">
+    <h2>Acheter</h2>
+    <ul>
+      <li><a href="http://www.eyrolles.com/Accueil/Livre/9782212134179">Eyrolles.com</a></li>
+      <li><a href="http://www.amazon.fr/gp/product/2212134177">Amazon.fr</a></li>
+      <li><a href="http://livre.fnac.com/a4130776">Fnac.com</a></li>
+    </ul>
+  </section>
+  
+  <section class="quotes">
+    <h2>Ce qu’ils en disent</h2>
+    <blockquote>
+      <p>"C'est une petite bombe ! C'est l'un des bouquins qu'il faudra rendre obligatoires dans toute équipe de concepteurs et d'intégrateurs web."</p>
+      <cite><a href="http://www.goetter.fr">Raphaël Goetter</a>, fondateur d'Alsacreations.fr et auteur du livre "CSS avancées", Eyrolles 2011</cite>
+    </blockquote>
+    
+    <blockquote>
+      <p>"Je ne comprends rien au Français, alors j’utilise CSS Maintenables comme tapis de souris."</p>
+      <cite><a href="http://twitter.com/andrewvos">Andrew Vos</a>, développeur à la BBC</cite>
+    </blockquote>
+  </section>
+  
+  <section class="about">
+    <h2>À propos</h2>
+    
+    <p>Bonjour, je m’appelle Kaelig. Je suis intégrateur HTML/CSS depuis 2001 par pure passion, et également depuis 2007 à titre professionnel.</p>
+    <p>J’anime <a href="http://blog.kaelig.fr/" title="Le ministère de l'intégration">un blog dédié à l’intégration</a>, aux préprocesseurs CSS et au design adaptatif.</p>
+    <p>Après 5 années passées chez la fabuleuse agence <a href="http://www.lunaweb.fr/" title="Agence LunaWeb, ergonomie et conception de sites Internet à Rennes">LunaWeb</a> en tant que développeur multi-casquettes (intégration, ergonomie, conception d’interfaces…), les sirènes anglophones m’ont attiré vers les terres de la Reine, où j’exerce le métier de UI Developer pour la BBC sur le projet <a href="http://m.bbc.co.uk/news">Responsive News</a>.</p>
+    <p>J’ai accompagné avec succès de nombreux clients dans l’établissement et la refonte de leurs chartes web, et ce avec de lourdes contraintes de compatibilité et de prise en main du code par les équipes chargées de la maintenance des sites.</p>
+    
+    <h3>Pourquoi ce livre ?</h3>
+    <p>Que ce soit en agence, sur des projets personnels ou en tant qu’indépendant, <strong>Sass et Compass m’ont apporté un confort de travail et une productivité</strong> inégalés jusqu’à présent. Cet ouvrage tente une introduction agréable aux préprocesseurs et aux possibilités qu’ils ouvrent au développeur d’aujourd’hui.</p>
+    <p><strong>Dans ce livre, j’essaie de transmettre un maximum de bonnes pratiques et réflexes acquis sur de nombreux projets pour obtenir un code CSS robuste, minimaliste et élégant.</strong></p>
+  </section>
+  
+  <section class="toc">
+    <h2>Table des matières</h2>
+
+    <h3>Préface de Chris Heilmann</h3>
+
+    <h3>Avant-propos</h3>
+
+    <ul>
+      <li>Pourquoi ce livre ?</li>
+      <li>À qui est destiné ce livre ?</li>
+      <li>Structure du livre</li>
+      <li>Remerciements</li>
+    </ul>
+
+    <h3>De <code>&lt;font&gt;</code> à @font-face : une problématique nouvelle</h3>
+
+    <ul>
+      <li>Aux débuts : pas de CSS, ni d’intégrateurs web</li>
+      <li>L’apparition de la feuille de style comme livrable</li>
+      <li>CSS aujourd’hui :- l’importance des standards, l’impact des navigateurs</li>
+      <li>Le futur des CSS</li>
+    </ul>
+
+    <h3>Première plongée dans CSS</h3>
+
+    <ul>
+      <li>Apprendre les CSS : l’incontournable théorie</li>
+      <li>Être en veille constante</li>
+      <li>Aide entre développeurs</li>
+    </ul>
+
+    <h3>Bonnes pratiques pour un code lisible et maintenable</h3>
+
+    <ul>
+      <li>Un <code>&lt;head&gt;</code> à toute épreuve</li>
+      <li>Reset.css : réinitialisation des styles</li>
+      <li>Bien ranger ses fichiers</li>
+      <li>Écrire un code lisible</li>
+      <li>Documenter son code</li>
+      <li>Dégradation gracieuse et amélioration progressive</li>
+      <li>Simplifier un design trop complexe</li>
+      <li>Tester, encore et encore</li>
+    </ul>
+
+    <h3>Pragmatisme : démystifier certaines bonnes pratiques</h3>
+
+    <ul>
+      <li>Mythe n° 1 – Pas d’informations de présentation dans le HTML</li>
+      <li>Mythe n° 2 – Ne pas utiliser d’éléments non sémantiques</li>
+      <li>Mythe n° 3 – On ne doit pas créer de classes non sémantiques</li>
+      <li>Mythe n° 4 – Le rendu doit être le même dans tous les navigateurs</li>
+      <li>Mythe n° 5 – La taille du texte ne doit pas être exprimée en pixels</li>
+    </ul>
+
+    <h3>Les frameworks CSS</h3>
+
+    <ul>
+      <li>Pourquoi utiliser un framework CSS ?</li>
+      <li>Frameworks les plus populaires</li>
+      <li>OOCSS : CSS orientées objet</li>
+      <li>Développer son propre framework ?</li>
+    </ul>
+
+    <h3>Travailler en équipe</h3>
+
+    <ul>
+      <li>La communication avant tout</li>
+      <li>Conventions de codage</li>
+      <li>Un code accessible aux débutants</li>
+      <li>Les erreurs à ne pas commettre</li>
+      <li>Gérer les versions avec Git</li>
+    </ul>
+
+    <h3>Préprocesseurs CSS : quand la machine écrit pour vous</h3>
+
+    <ul>
+      <li>Un préprocesseur, pour quoi faire ?</li>
+      <li>LESS</li>
+      <li>Sass</li>
+      <li>Google Closure Stylesheets</li>
+      <li>Stylus</li>
+      <li>CSS Scaffold</li>
+    </ul>
+
+    <h3>Sass et Compass</h3>
+
+    <ul>
+      <li>Premiers pas avec Sass
+        <ul>
+          <li>Interfaces graphiques</li>
+          <li>Installation en ligne de commande</li>
+          <li>Outil en ligne de commande</li>
+        </ul>
+      </li>
+      <li>Syntaxe et fonctionnalités de Sass
+        <ul>
+          <li>Syntaxe de base de Sass</li>
+          <li>Règles imbriquées</li>
+          <li>Sélecteurs avancés</li>
+          <li>Commentaires</li>
+          <li>Les variables</li>
+          <li>Les mixins</li>
+          <li>Héritage de classe : @extend</li>
+          <li>Inclure un fichier : @import</li>
+          <li>Le module de couleurs</li>
+        </ul>
+      </li>
+      <li>Bonnes pratiques en Sass
+        <ul>
+          <li>Mixins : attention au surpoids</li>
+          <li>Imbrications : la règle de l’inception</li>
+          <li>Performances : concaténer et compacter les CSS</li>
+        </ul>
+      </li>
+      <li>Compass : un métaframework</li>
+      <li>Compass dans la pratique
+        <ul>
+          <li>Reset.css en une ligne</li>
+          <li>Plus jamais d’images manquantes</li>
+          <li>Des images et des fontes embarquées</li>
+          <li>Dimensions d’une image</li>
+          <li>Des sprites sans aucun effort</li>
+          <li>CSS3 facile sans préfixes</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Erreurs de conception : comment les débusquer</h3>
+
+    <ul>
+      <li>L’usage des CSS sur le Web aujourd’hui</li>
+      <li>Les différents producteurs de feuilles de style</li>
+      <li>Outils pour diagnostiquer</li>
+      <li>Les styles « inline » (dans la source du HTML)</li>
+      <li>La guerre des règles !important</li>
+      <li>Les règles surspécifiées</li>
+      <li>La multiplication des propriétés</li>
+    </ul>
+
+    <h3>Méthode : coder un design de zéro</h3>
+
+    <ul>
+      <li>Étudier le design</li>
+      <li>Déduire des motifs récurrents</li>
+      <li>Définir la base typographique</li>
+      <li>Coder la structure générale</li>
+      <li>Coder les modules</li>
+      <li>Étape finale : les exceptions</li>
+    </ul>
+
+    <h3>Méthode : faire le ménage dans des CSS</h3>
+
+    <ul>
+      <li>À partir de quand, et jusqu’à quel point optimiser ?</li>
+      <li>Étape 1 : utiliser les variables à bon escient</li>
+      <li>Étape 2 : séparation en plusieurs feuilles partielles</li>
+      <li>Étape 3 : imbrication des sélecteurs</li>
+      <li>Étape 4 : création de mixins</li>
+      <li>Étape 5 : extensions de classes</li>
+      <li>Bonus : débogage cross-browser sans hacks</li>
+    </ul>
+    
+  </section>
+
+  <footer>
+    <h2>Contact</h2>
+    <ul>
+      <li>E-mail : <a href="mailto:kaelig@deloumeau.fr">kaelig@deloumeau.fr</a></li>
+      <li>L’auteur : <a href="http://www.kaelig.fr" rel="me">Kaelig.fr</a></li>
+      <li>Twitter : <a href="http://twitter.com/kaelig" rel="me">@kaelig</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
