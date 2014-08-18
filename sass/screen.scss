@@ -53,7 +53,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   padding: 2px 0;
-
+  
   &:focus,
   &:hover,
   &:active { text-decoration: underline; }
@@ -104,7 +104,6 @@ body {
 // Sections
 .cover {
   text-align: center;
-
   img {
     max-width: 100%;
   }
@@ -119,7 +118,6 @@ body {
 
 .introduction {
   font-size: 1.2em;
-
   p {
     + p {
       font-size: .90909090909090909090em;
@@ -139,7 +137,6 @@ body {
 }
   blockquote {
     margin-bottom: 2em;
-
     + blockquote {
       border-top: 1px solid lighten($primary, 30%);
     }
@@ -153,9 +150,10 @@ body {
         color: lighten($body, 30%);
       }
     }
-
+    
 .buy,
 .quotes {
+  
   @include respond-to(medium-screens) {
     clear: both;
     color: lighten($body, 25%);
@@ -164,11 +162,14 @@ body {
     float: right;
     padding: 0 1% 0 4%;
     background: #fff;
-
     h2 {
       @include separator;
     }
   }
+}
+
+.about {
+  
 }
 
 footer,
